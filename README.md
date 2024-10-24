@@ -28,6 +28,7 @@ There are two methods for this Content based filtering :
  - The data in the columns is not the proper list format. So we have to convert that into proper list forms.
  - After applying all transformation to convert data into proper format, we then combine *'overview','genres','keywords','cast','crew'* into one single column *'tags'*
  - So, our final data looks like this :-
+   
    ![](https://github.com/Srishti002/Movie-Recommender-System/blob/main/Screenshot%202024-10-25%20015510.png)
    
  - We have to apply stemming operation in the 'tags' column means we have to get the *root* word from the whole word like *run* from *running*.
@@ -45,5 +46,5 @@ Sc(x,y) = x . y / ||x|| × ||y||
 The cosine similarity between two vectors is measured in ‘θ’.
 
 ### 4. Results:
-![]
+![](https://github.com/Srishti002/Movie-Recommender-System/blob/main/Screenshot%202024-10-25%20022743.png)
 
