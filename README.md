@@ -1,13 +1,20 @@
 # Movie Recommender System
-## Types Of Recommender System:-
 
-### 1. Collaborative Filtering :
-Recommends items to you based on ratings of users who gave similar ratings as you. Means it finds similarity between users or items and according to that it recommends things.
+## Introduction :
+In this project we are making a movie recommender system using *'Content based Filtering'*
 
-### 2. Content based filtering:
-Recommends items based on features of user and item  to find good match. Unlike collaborative filtering, it doesn't rely on other users' behaviors.
-There are two methods for this Content based filtering :
-    > Feature 
+> ### Types Of Recommender System:-
+
+  > #### 1. Collaborative Filtering :
+
+  Recommends items to you based on ratings of users who gave similar ratings as you. 
+  Means it finds similarity between users or items and according to that it recommends things.
+
+  > #### 2. Content based filtering:
+
+  Recommends items based on features of user and item  to find good match. Unlike collaborative filtering, it doesn't rely on other users' behaviors.
+  There are two methods for this Content based filtering :
+     > Feature 
 
 
 
