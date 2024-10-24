@@ -29,9 +29,21 @@ There are two methods for this Content based filtering :
  - After applying all transformation to convert data into proper format, we then combine *'overview','genres','keywords','cast','crew'* into one single column *'tags'*
  - So, our final data looks like this :-
    ![](https://github.com/Srishti002/Movie-Recommender-System/blob/main/Screenshot%202024-10-25%20015510.png)
+   
  - We have to apply stemming operation in the 'tags' column means we have to get the *root* word from the whole word like *run* from *running*.
  - Now , we have to convert our text data into some vector form. So we import *'CountVectorizer'*here as it converts text data into some numberical value.
  -  The max_features parameter specifies the maximum number of features (unique words) to consider in the vocabulary. Setting it to 5000 means that only the 5000 most frequent words will be used.
  -  The stop_words parameter specifies a list of words to be ignored during the vectorization process. Setting it to 'english' indicates that the built-in list of English stop words (common words like "the", "and", "in") will be used.
 
-   ![]()
+    ![](https://github.com/Srishti002/Movie-Recommender-System/blob/main/Screenshot%202024-10-25%20021246.png)
+
+### 3. Cosine Similarity:
+It actually measures the cosine of the angle between two vectors. Cosine similarity is a metric, helpful in determining, how similar the data objects are irrespective of their size.
+
+Sc(x,y) = x . y / ||x|| × ||y||
+
+The cosine similarity between two vectors is measured in ‘θ’.
+
+### 4. Results:
+![]
+
