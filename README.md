@@ -22,10 +22,16 @@ There are two methods for this Content based filtering :
  
  Here we are loading both *'tmdb_5000_movies.csv'* and *'tmdb_5000_credits.csv'*
 
- ### Data Preprocessing :
+ ### 2. Data Preprocessing :
  - We merge both movies and credits on the basis of *title*.
  - We'll keep only few columns that are necessary like *'movie_id','title','overview','genres','keywords','cast','crew'*
  - The data in the columns is not the proper list format. So we have to convert that into proper list forms.
  - After applying all transformation to convert data into proper format, we then combine *'overview','genres','keywords','cast','crew'* into one single column *'tags'*
  - So, our final data looks like this :-
-   ![](
+   ![](https://github.com/Srishti002/Movie-Recommender-System/blob/main/Screenshot%202024-10-25%20015510.png)
+ - We have to apply stemming operation in the 'tags' column means we have to get the *root* word from the whole word like *run* from *running*.
+ - Now , we have to convert our text data into some vector form. So we import *'CountVectorizer'*here as it converts text data into some numberical value.
+ -  The max_features parameter specifies the maximum number of features (unique words) to consider in the vocabulary. Setting it to 5000 means that only the 5000 most frequent words will be used.
+ -  The stop_words parameter specifies a list of words to be ignored during the vectorization process. Setting it to 'english' indicates that the built-in list of English stop words (common words like "the", "and", "in") will be used.
+
+   ![]()
