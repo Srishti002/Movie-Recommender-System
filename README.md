@@ -3,18 +3,35 @@
 ## Introduction :
 In this project we are making a movie recommender system using *'Content based Filtering'*
 
-> ### Types Of Recommender System:-
+### Types Of Recommender System:-
 
-  > #### 1. Collaborative Filtering :
+  #### 1. Collaborative Filtering :
 
   Recommends items to you based on ratings of users who gave similar ratings as you. 
   Means it finds similarity between users or items and according to that it recommends things.
 
-  > #### 2. Content based filtering:
+  #### 2. Content based filtering:
 
   Recommends items based on features of user and item  to find good match. Unlike collaborative filtering, it doesn't rely on other users' behaviors.
-  There are two methods for this Content based filtering :
-     > Feature 
+  There are different approaches for implementing this Content based filtering :
+  
+  - Direct Similarity Computation :
+    It dierctly computes similarity(like cosine) between features. No training is required. Works well when features are well-engineered. In this project we are using this approach.
+    
+  - Concatenation with neural Network Approach :
+    It concatenates user and item feature vectors. Then passed through neural layers and outputs a single prediction score.
+    
+  - Two tower Architecture :
+    Separate neural networks for user and item features. Each tower learns its own represnetations. Then it compute similarity between final embeddings.
+    
+  - Hybrid Approach :
+    Combines similarity based and neural network paths.
+    
+  - Neural Similarity Network:
+    Projects user and item features into same embedding space. And then computes similarity in this learned space.
+       
+       
+       
 
 
 
